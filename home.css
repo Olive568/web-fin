@@ -1,0 +1,11 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--primary-color);
+    z-index: 9;
+}
+.paws {
+    height: 60px;
+}
