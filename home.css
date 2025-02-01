@@ -1,16 +1,15 @@
 .hidden {
     opacity: 0;
-    transform: translateY(50px); /* Start slightly below */
-    transition: transform 0.7s ease-out, opacity 0.7s ease-out; /* Smooth transition */
+    transform: translateY(50px); 
+    transition: transform 0.7s ease-out, opacity 0.7s ease-out; 
 }
 
 .visible {
     opacity: 1;
-    transform: translateY(0); /* Move to the original position */
+    transform: translateY(0); 
 }
 .hero-section {
-    height: 80vh; /* Fullscreen height */
-    background-image: url('start.png'); /* Replace with your image */
+    height: 80vh; 
     background-size: cover;
     background-position: center;
     display: flex;
@@ -22,9 +21,9 @@
     text-align: center;
 }
 
-/* Text container styling */
+
 .hero-text {
-    background: rgba(0, 0, 0, 0.6); /* Optional: Dark overlay for text contrast */
+    background: rgba(0, 0, 0, 0.6); 
     padding: 20px;
     border-radius: 10px;
     transform: translateX(-100%); /* Start off-screen to the left */
@@ -32,9 +31,9 @@
     transition: transform 1s ease-out, opacity 1s ease-out;
 }
 
-/* Active state for sliding text */
+
 .hero-text.visible {
-    transform: translateX(0); /* Slide into view */
+    transform: translateX(0);
     opacity: 1;
 }
 body {
@@ -78,7 +77,7 @@ header nav ul li a {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Reverse layout for alternating sections */
+
 .reverse-layout {
     flex-direction: row-reverse;
 }
@@ -103,7 +102,7 @@ header nav ul li a {
     border-radius: 8px;
 }
 
-/* Footer styles */
+
 footer {
     text-align: center;
     padding: 1rem;
@@ -113,9 +112,9 @@ footer {
 .resume-section {
     text-align: center;
     padding: 50px 20px;
-    background: #21295c; /* Light background */
+    background: #21295c; 
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin: 50px auto;
     max-width: 600px;
 }
@@ -147,4 +146,13 @@ footer {
 .resume-button:hover {
     background-color: #0056b3;
     transform: scale(1.05);
+}
+.hero-section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1; 
 }

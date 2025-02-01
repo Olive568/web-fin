@@ -14,17 +14,17 @@
                     let scrollPos = $(window).scrollTop();
                     let windowHeight = $(window).height();
     
-                    // Check if the section is in the viewport
+                
                     if (scrollPos + windowHeight > sectionTop + 50) {
                         $(this).addClass("visible");
                     }
                 });
             }
     
-            // Initial check on page load
+      
             checkVisibility();
     
-            // Check on scroll
+
             $(window).on("scroll", function () {
                 checkVisibility();
             });
@@ -45,6 +45,7 @@
         </nav>
     </header>
     <section id="hero" class="hero-section">
+        <img src="start.png" alt="Hero Image">
     <div class="hero-text" data-animation="slide-in">
         <h1>I’m Luis Oliver</h1>
         <p>I am a programmer specialized in C# and Python. Goal-oriented and a thinker outside the box, I ensure to deliver the highest quality of work.</p>
